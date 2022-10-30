@@ -3,3 +3,4 @@
 .env
 myproject/venv
 venv
+..venv
