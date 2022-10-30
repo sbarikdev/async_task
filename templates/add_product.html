@@ -1,0 +1,25 @@
+<div class="main">
+
+    <form method="POST">
+        {% csrf_token%}
+        <label for="peas">static_cat_col_list:</label>
+          <select class="mul-select" multiple="true" name="services" id="services">
+            <option value="Cambodia">Cambodia</option>
+            <option value="Khmer">Khmer</option>
+            <option value="Thiland">Thiland</option>
+            <option value="Korea">Korea</option>
+            <option value="China">China</option>
+            <option value="English">English</option>
+            <option value="USA">USA</option>
+        </select>
+        <label for="peas">target_col:</label>
+        <select multiple="false" name="target_col" id="target_col">
+            <option value="cpf">cpf</option>
+        </select>
+        <br><br>
+        <label for="fname">File name:</label>
+        <input type="text" id="file_name" name="file_name">
+        <input type="submit" value="Generate EDA">
+        <!-- <button type="button" value="POST" type="submit">Generate EDA </button> -->
+    </form>
+    </div>
